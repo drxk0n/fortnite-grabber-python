@@ -5,7 +5,7 @@ def py2exe(scrip, icon):
         PyInstaller.__main__.run([
             '--onefile',
             '--windowed',
-            f'--{icon}',
+            f'--icon={icon}',
             scrip
         ])
     else:
